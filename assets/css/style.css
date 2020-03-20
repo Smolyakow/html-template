@@ -9,6 +9,16 @@ body {
     font-size: 15px;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    height: 1p;
+    background-color: #e5e5e5;
+    display: block;
+    width: 100%;
+    margin: 40px 0;
 }
 
 h1,
@@ -221,10 +231,17 @@ nav_link.active {
     padding: 80px 0;
 }
 
+.section--devices {
+    padding-bottom: 0;
+    background: url("../images/devices-bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
 .section_header {
     width: 100%;
     max-width: 850px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
@@ -340,4 +357,56 @@ nav_link.active {
 .stat_text {
     font-size: 14px;
     text-transform: uppercase;
+}
+
+/*Services*/
+
+.services {
+    display: flex;
+}
+
+.services_item {
+    flex: 1 1 0;
+    padding-left: 85px;
+    position: relative;
+    padding-right: 35px;
+}
+
+.services_icon {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    z-index: 1;
+}
+
+.services_title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.services_text {
+    font-size: 15px;
+    color: #999;
+}
+
+/*devices*/
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices_item {
+    display: block;
+}
+
+.devices_item--iphone {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
 }
